@@ -34,6 +34,8 @@ RUN docker-php-ext-install gd
 RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
     && docker-php-ext-install imap
 
+RUN apt-get update && apt-get install -y nodejs npm
+
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 

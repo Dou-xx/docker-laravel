@@ -15,11 +15,15 @@ Install project to folder 'laravel'
 ### App
 ```sudo docker-compose exec app bash```
 <br>
-``` php artisan migrate ``` ...
+``` composer install ```
+<br>
+``` php artisan migrate ```
+<br>
+``` exit ```
 ### MySQL
 ```sudo docker-compose exec db bash```
 <br>
-```mysql -u root -p``` ...
+```mysql -u root -p```
 ### Laravel settings .env
 #### Database:
 ```
@@ -30,3 +34,10 @@ DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=123123
 ```
+
+### NPM
+``` sudo docker-compose exec app bash```
+<br>
+``` npm install```
+<br>
+``` npm prod```

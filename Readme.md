@@ -34,6 +34,12 @@ DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=123123
 ```
+#### Redis
+```
+REDIS_HOST=redis
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+```
 
 ### NPM
 ``` sudo docker-compose exec app bash```
